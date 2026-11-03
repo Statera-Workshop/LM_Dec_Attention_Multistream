@@ -1,0 +1,89 @@
+{
+ "model": "multistream",
+ "repo": "LM_2021_multistream-transformers",
+ "target_repo": "LM_Dec_Attention_Multistream",
+ "category": "Attention",
+ "upstream": "vendored from RichardMinsooGo/LM_2021_multistream-transformers (see LICENSE in vendor folder if present)",
+ "unified": [
+  "2 streams, causal=True"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm06",
+ "started": "2026-11-03 01:01:17",
+ "smoke": false,
+ "steps": 345,
+ "capped": true,
+ "diverged": false,
+ "bf16": true,
+ "final_loss": 4.191453456878662,
+ "minutes": 100.4,
+ "history": [],
+ "test": {
+  "512": {
+   "acc": 0.009765625,
+   "acc_updated": 0.0078125,
+   "acc_unchanged": 0.01171875,
+   "stale_rate": 0.0126953125,
+   "by_distance": {
+    "0-256": [
+     0.01,
+     195
+    ],
+    "256-1024": [
+     0.01,
+     1853
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  "2048": {
+   "acc": 0.0166015625,
+   "acc_updated": 0.015625,
+   "acc_unchanged": 0.017578125,
+   "stale_rate": 0.0126953125,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     4
+    ],
+    "256-1024": [
+     0.01,
+     203
+    ],
+    "1024-4096": [
+     0.017,
+     1841
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  }
+ },
+ "config": {
+  "pairs": 8,
+  "updates": 4,
+  "queries": 4,
+  "train_len": 512,
+  "test_lens": [
+   512,
+   2048
+  ],
+  "batch": 32,
+  "steps": 6000,
+  "eval_every": 500,
+  "eval_samples": 512,
+  "max_hours": 1.5
+ },
+ "micro_batch": null,
+ "seconds": 6051.7
+}

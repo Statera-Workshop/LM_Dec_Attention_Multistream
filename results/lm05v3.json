@@ -1,0 +1,74 @@
+{
+ "model": "multistream",
+ "repo": "LM_2021_multistream-transformers",
+ "target_repo": "LM_Dec_Attention_Multistream",
+ "category": "Attention",
+ "upstream": "vendored from RichardMinsooGo/LM_2021_multistream-transformers (see LICENSE in vendor folder if present)",
+ "unified": [
+  "2 streams, causal=True"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm05v3",
+ "started": "2026-11-02 18:41:13",
+ "smoke": false,
+ "levels": {
+  "4": {
+   "queries": 1,
+   "distinct": true,
+   "steps": 231,
+   "capped": true,
+   "diverged": false,
+   "bf16": true,
+   "final_loss": 4.245532989501953,
+   "minutes": 91.2,
+   "history": [],
+   "test": {
+    "512": {
+     "normal": 0.01171875,
+     "keys": 0.015625,
+     "values": 0.015625,
+     "true_recall": -0.00390625
+    },
+    "2048": {
+     "normal": 0.005859375,
+     "keys": 0.013671875,
+     "values": 0.013671875,
+     "true_recall": -0.0078125
+    }
+   },
+   "value_set_baseline": 0.25,
+   "chance": 0.015625,
+   "micro_batch": null
+  },
+  "16": {
+   "queries": 4,
+   "distinct": true,
+   "steps": 287,
+   "capped": true,
+   "diverged": false,
+   "bf16": true,
+   "final_loss": 4.199619770050049,
+   "minutes": 93.2,
+   "history": [],
+   "test": {
+    "512": {
+     "normal": 0.0126953125,
+     "keys": 0.01220703125,
+     "values": 0.01220703125,
+     "true_recall": 0.00048828125
+    },
+    "2048": {
+     "normal": 0.01806640625,
+     "keys": 0.01220703125,
+     "values": 0.01220703125,
+     "true_recall": 0.005859375
+    }
+   },
+   "value_set_baseline": 0.0625,
+   "chance": 0.015625,
+   "micro_batch": null
+  }
+ },
+ "seconds": 11105.4
+}

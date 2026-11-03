@@ -1,0 +1,40 @@
+{
+ "model": "multistream",
+ "repo": "LM_2021_multistream-transformers",
+ "target_repo": "LM_Dec_Attention_Multistream",
+ "category": "Attention",
+ "upstream": "vendored from RichardMinsooGo/LM_2021_multistream-transformers (see LICENSE in vendor folder if present)",
+ "unified": [
+  "2 streams, causal=True"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "check",
+ "started": "2026-11-02 11:26:08",
+ "smoke": false,
+ "params": 59056384,
+ "causality": {
+  "causal": true,
+  "uses_input": true,
+  "worst_leak": 0.0,
+  "min_effect": 1.608304738998413,
+  "logit_scale": 2.5558987127075197,
+  "length": 256,
+  "positions": [
+   17,
+   63,
+   100,
+   130,
+   200
+  ]
+ },
+ "data_checks": [
+  "enwik8 train bytes  90,000,000 expected  90,000,000 OK",
+  "enwik8 valid bytes   5,000,000 expected   5,000,000 OK",
+  "enwik8 test  bytes   5,000,000 expected   5,000,000 OK",
+  "enwik8 distinct byte values in first 10M train bytes: 200 (vocab 256)",
+  "recall L=512 random gap: 16 answers/sample, keys/values/distractors disjoint OK",
+  "recall L=512 max gap: 16 answers/sample, keys/values/distractors disjoint OK"
+ ],
+ "seconds": 2.3
+}
