@@ -8,127 +8,197 @@
   "2 streams, causal=True"
  ],
  "torch": "2.5.1+cu124",
- "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "gpu": "NVIDIA GeForce RTX 4090",
  "stage": "lm02",
- "started": "2026-11-03 13:02:18",
+ "started": "2026-11-25 00:27:45",
  "smoke": false,
  "params": 59056384,
  "micro_batch": null,
- "steps": 14342,
- "tokens": 117489664,
+ "steps": 24415,
+ "tokens": 200007680,
  "budget_tokens": 200000000,
- "capped": true,
+ "capped": false,
  "bf16": true,
- "hours": 4.039,
- "valid_bpc": 1.563207731031631,
- "test_bpc": 1.5328906997071028,
+ "hours": 0.877,
+ "valid_bpc": 1.4882865978413222,
+ "test_bpc": 1.4655446429122378,
  "valid_tokens": 4915200,
  "test_tokens": 4915200,
  "history": [
   {
    "step": 1000,
    "tokens": 8192000,
-   "train_bpc": 3.4344232485928634,
-   "valid_bpc": 2.6829146369043806,
-   "hours": 0.27668337729242115
+   "train_bpc": 3.432025153810075,
+   "valid_bpc": 2.6849014114440246,
+   "hours": 0.03508451322714488
   },
   {
    "step": 2000,
    "tokens": 16384000,
-   "train_bpc": 2.345627496840167,
-   "valid_bpc": 2.1495059324286205,
-   "hours": 0.5504727925856908
+   "train_bpc": 2.3483294013834617,
+   "valid_bpc": 2.143092582429744,
+   "hours": 0.07029875033431583
   },
   {
    "step": 3000,
    "tokens": 24576000,
-   "train_bpc": 2.0063811699733343,
-   "valid_bpc": 1.9672888124309331,
-   "hours": 0.8246839627292422
+   "train_bpc": 2.0048152956264356,
+   "valid_bpc": 1.9652527184265007,
+   "hours": 0.105572180946668
   },
   {
    "step": 4000,
    "tokens": 32768000,
-   "train_bpc": 1.869559327800771,
-   "valid_bpc": 1.8676993399032387,
-   "hours": 1.1000699556536144
+   "train_bpc": 1.8669872569162134,
+   "valid_bpc": 1.8667184506126546,
+   "hours": 0.1408490382300483
   },
   {
    "step": 5000,
    "tokens": 40960000,
-   "train_bpc": 1.7875523858397118,
-   "valid_bpc": 1.8159255003858887,
-   "hours": 1.3749028393295075
+   "train_bpc": 1.7846942019514476,
+   "valid_bpc": 1.8122898920560657,
+   "hours": 0.17612533814377254
   },
   {
    "step": 6000,
    "tokens": 49152000,
-   "train_bpc": 1.732339653124457,
-   "valid_bpc": 1.7673448885445062,
-   "hours": 1.6496133526166281
+   "train_bpc": 1.7301374252551525,
+   "valid_bpc": 1.7596125889776375,
+   "hours": 0.2114036489195294
   },
   {
    "step": 7000,
    "tokens": 57344000,
-   "train_bpc": 1.6941384817316463,
-   "valid_bpc": 1.7319761456060967,
-   "hours": 1.924778648217519
+   "train_bpc": 1.691381616176667,
+   "valid_bpc": 1.7280930052266268,
+   "hours": 0.24669057382477655
   },
   {
    "step": 8000,
    "tokens": 65536000,
-   "train_bpc": 1.659398676509728,
-   "valid_bpc": 1.6997930794453682,
-   "hours": 2.2344484703408347
+   "train_bpc": 1.6572572510428443,
+   "valid_bpc": 1.6982991641874339,
+   "hours": 0.2819713043504291
   },
   {
    "step": 9000,
    "tokens": 73728000,
-   "train_bpc": 1.6314247281067673,
-   "valid_bpc": 1.6785004724050518,
-   "hours": 2.522426051894824
+   "train_bpc": 1.6296047897231503,
+   "valid_bpc": 1.6801802131974168,
+   "hours": 0.31724832091066574
   },
   {
    "step": 10000,
    "tokens": 81920000,
-   "train_bpc": 1.6098118635731469,
-   "valid_bpc": 1.6567899200059149,
-   "hours": 2.809699955317709
+   "train_bpc": 1.6087863502021176,
+   "valid_bpc": 1.6554866827729056,
+   "hours": 0.3525284460518095
   },
   {
    "step": 11000,
    "tokens": 90112000,
-   "train_bpc": 1.586977890057645,
-   "valid_bpc": 1.6430148380183305,
-   "hours": 3.0852405699094136
+   "train_bpc": 1.585710567961615,
+   "valid_bpc": 1.6440380419203326,
+   "hours": 0.38781393150488536
   },
   {
    "step": 12000,
    "tokens": 98304000,
-   "train_bpc": 1.5679313386874048,
-   "valid_bpc": 1.6218597741030418,
-   "hours": 3.359082894060347
+   "train_bpc": 1.566509034081585,
+   "valid_bpc": 1.6250830918636041,
+   "hours": 0.4231050944328308
   },
   {
    "step": 13000,
    "tokens": 106496000,
-   "train_bpc": 1.5578813640272302,
-   "valid_bpc": 1.6140414582732572,
-   "hours": 3.633190157347255
+   "train_bpc": 1.5568863035381977,
+   "valid_bpc": 1.6102445499949298,
+   "hours": 0.4583733737468719
   },
   {
    "step": 14000,
    "tokens": 114688000,
-   "train_bpc": 1.5442833222703136,
-   "valid_bpc": 1.598437853302046,
-   "hours": 3.9073763136731254
+   "train_bpc": 1.5435891382916858,
+   "valid_bpc": 1.5983343808000674,
+   "hours": 0.4936547652880351
   },
   {
-   "step": 14342,
-   "tokens": 117489664,
-   "train_bpc": 1.537361933585732,
-   "valid_bpc": 1.5951075528736012,
-   "hours": 4.003067201309734
+   "step": 15000,
+   "tokens": 122880000,
+   "train_bpc": 1.5252516877293052,
+   "valid_bpc": 1.5866180343329015,
+   "hours": 0.5289381337828106
+  },
+  {
+   "step": 16000,
+   "tokens": 131072000,
+   "train_bpc": 1.5195248934185774,
+   "valid_bpc": 1.57568414787332,
+   "hours": 0.564223180214564
+  },
+  {
+   "step": 17000,
+   "tokens": 139264000,
+   "train_bpc": 1.5078191641283794,
+   "valid_bpc": 1.565786057885437,
+   "hours": 0.5995046295722326
+  },
+  {
+   "step": 18000,
+   "tokens": 147456000,
+   "train_bpc": 1.4906539997689883,
+   "valid_bpc": 1.559745858644137,
+   "hours": 0.6347873195674685
+  },
+  {
+   "step": 19000,
+   "tokens": 155648000,
+   "train_bpc": 1.4877137179845346,
+   "valid_bpc": 1.553253449940485,
+   "hours": 0.6700711992051867
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "train_bpc": 1.473182114326777,
+   "valid_bpc": 1.5408216479065104,
+   "hours": 0.705358491341273
+  },
+  {
+   "step": 21000,
+   "tokens": 172032000,
+   "train_bpc": 1.4696551903471757,
+   "valid_bpc": 1.5353327424922043,
+   "hours": 0.740639150010215
+  },
+  {
+   "step": 22000,
+   "tokens": 180224000,
+   "train_bpc": 1.4594024244940191,
+   "valid_bpc": 1.5288103271155435,
+   "hours": 0.7759062131245931
+  },
+  {
+   "step": 23000,
+   "tokens": 188416000,
+   "train_bpc": 1.4526650857522365,
+   "valid_bpc": 1.5239272262893353,
+   "hours": 0.8111886201964484
+  },
+  {
+   "step": 24000,
+   "tokens": 196608000,
+   "train_bpc": 1.4457420004160597,
+   "valid_bpc": 1.520176481594153,
+   "hours": 0.8464704802963469
+  },
+  {
+   "step": 24415,
+   "tokens": 200007680,
+   "train_bpc": 1.442042442359864,
+   "valid_bpc": 1.513386312447756,
+   "hours": 0.8618885737657547
   }
  ],
  "prime": [
@@ -261,6 +331,6 @@
   110,
   101
  ],
- "sample": " of the most popular area of the [[coffee]] of the [[coffee]] of the [[coffee]].  The coffee of the coffee is a [[coffee]] of the [[coffee]] of the [[coffee]] of the [[coffee]] of the [[coffee]] of the [[coffee]].  The coffee of the coffee is a [[coffee]] ",
- "seconds": 14547.7
+ "sample": " of the most common areas of the [[coffee]] of the [[coffee]].  The coffee is the [[coffee]] of the [[coffee]] of the [[coffee]] of the [[coffee]].  The coffee is the [[coffee]] of the [[coffee]] of the [[coffee]] of the [[coffee]].  The coffee is the [[co",
+ "seconds": 3156.7
 }
